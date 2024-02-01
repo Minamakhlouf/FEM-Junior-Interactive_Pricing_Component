@@ -1,0 +1,43 @@
+.heading {
+    padding: 37px; 
+    position: relative; 
+    text-align: center;
+    margin-bottom: 32px; 
+}
+
+.heading_pattern {
+    position: absolute; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
+}
+
+.heading_title {
+    color: #293356; 
+    margin-bottom: 12px; 
+    position: relative; 
+    z-index: 4; 
+    font-size: 20px; 
+    font-weight: 800; 
+}
+
+.heading_text {
+    position: relative; 
+    z-index: 4; 
+    font-size: 13px; 
+    line-height: 1.76; 
+    width: 170px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+@media screen and (min-width: 760px) {
+    .heading_title {
+        font-size: 28px; 
+    }
+    .heading_text {
+        font-size: 15px; 
+        width: 100%; 
+    }
+}

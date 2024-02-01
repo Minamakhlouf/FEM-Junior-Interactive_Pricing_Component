@@ -1,0 +1,13 @@
+.app {
+  background-image: url("./assets/bg-pattern.svg"); 
+  background-size: 100% 50%; 
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+  padding: 89px 25px 
+}
+
+@media screen and (min-width: 780px) {
+  .app {
+    padding: 100px 25px; 
+  }
+}

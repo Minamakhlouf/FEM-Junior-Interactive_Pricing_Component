@@ -1,0 +1,62 @@
+.billing {
+    padding: 40px 48px; 
+    display: flex;
+    justify-content: center;
+}
+
+.billing_flex {
+    display: flex; 
+    gap: 16px; 
+    position: relative; 
+}
+
+.billing_discount {
+    color: #ff8d68; 
+    font-size: 10px; 
+    position: absolute;
+    right: 0; 
+    top: 50%; 
+    transform: translateX(110%) translateY(-50%); 
+    background-color: hsl(14, 92%, 95%);
+    padding: 2px; 
+    border-radius: 5px; 
+    font-weight: 800;
+}
+
+.billing_discount--large {
+    display: none; 
+}
+
+.billing_toggle {
+    padding: 4px; 
+    background-color: #979797;
+    width: 43px; 
+    border-radius: 10px;
+    cursor: pointer; 
+    display: flex;
+    transition: all 0.2s ease; 
+}
+
+.billing_toggle:hover {
+    background-color: #7aeadf;
+}
+
+.billing_yearly {
+    justify-content: flex-end;
+}
+
+.billing_circle {
+    height: 14px; 
+    width: 14px; 
+    border-radius: 50%; 
+    background-color: white;
+}
+
+@media screen and (min-width: 780px) {
+    .billing_discount--large {
+        display: inline; 
+    }
+    .billing_discount--small {
+        display: none; 
+    }
+}

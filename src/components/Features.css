@@ -1,0 +1,49 @@
+.features {
+    padding: 24px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 32px; 
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(169, 169, 169, 0.5)
+}
+
+.features_list {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.features_item {
+    display: flex; 
+    gap: 12px;
+    justify-content: center; 
+    font-size: 12px; 
+    font-weight: 600; 
+}
+
+.features_button {
+    padding: 12px 48px; 
+    background-color: #293356;
+    color: #BECDFF; 
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    font-size: 12px; 
+    font-family: "Manrope" sans-serif; 
+    font-weight: 800; 
+}
+
+.features_button:hover {
+    color: white; 
+}
+
+@media screen and (min-width: 780px) {
+    .features {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .features_item {
+        justify-content: flex-start;
+    }
+}
